@@ -1,0 +1,23 @@
+django >=1.9, <2
+django-admin-sortable2
+django-allauth
+django-ckeditor
+django-cleanup
+django-countries
+django-crispy-forms
+django-flat-responsive
+django-geoposition
+django-image-cropping
+django-import-export
+django-modeltranslation
+django-phonenumber-field
+django-taggit
+django-unused-media
+easy_thumbnails==2.4.1
+djangorestframework
+django-easy-select2
+Pillow
+jsonfield
+django-unused-media
+django-widget-tweaks
+django-filter

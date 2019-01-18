@@ -1,0 +1,87 @@
+{% extends "account/base.html" %}
+{% load static %}
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+
+      <div class="form-signin">
+    <div class="text-center">
+        <img src="{% static 'assets/img/logo.png' %}" alt="Metis Logo">
+    </div>
+    <hr>
+    <div class="tab-content">
+        <div id="login" class="tab-pane active">
+
+<!--~~~~~~~~~~~~~~~#############################################~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <form method="POST" action="{% url 'account_login' %}">
+          <p class="text-muted text-center">
+            Enter your username and password
+          </p>
+          {% csrf_token %}
+          <input class="form-control top" autofocus="autofocus" id="id_login" name="login" placeholder="E-mail address" type="email"
+            required="">
+          <input class="form-control bottom" id="id_password" name="password" placeholder="Password" type="password" required="">          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" /> {% endif %}
+          <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">{% trans "Sign In" %}</button>
+        </form>
+<!--~~~~~~~~~~~~~~~#############################################~~~~~~~~~~~~~~~~~~~~~~~-->
+        </div>
+        <div id="forgot" class="tab-pane">
+            <form method="POST" action="{% url 'account_reset_password' %}">
+              {% csrf_token %}
+                <p class="text-muted text-center">Enter your valid e-mail</p>
+                <input id="id_email" name="email" type="email" placeholder="E-mail address" class="form-control">
+                <br>
+                <button class="btn btn-lg btn-danger btn-block" type="submit">{% trans 'Reset My Password' %}</button>
+            </form>
+        </div>
+
+    </div>
+    <hr>
+    <div class="text-center">
+        <ul class="list-inline">
+            <li><a class="text-muted" href="#login" data-toggle="tab">Login</a></li>
+            <li><a class="text-muted" href="#forgot" data-toggle="tab">Forgot Password</a></li>
+        </ul>
+    </div>
+  </div>
+
+
+    <!--jQuery -->
+    <script src="{% static 'assets/lib/jquery/jquery.js' %}"></script>
+
+    <!--Bootstrap -->
+    <script src="{% static 'assets/lib/bootstrap/js/bootstrap.js' %}"></script>
+
+
+    <script type="text/javascript">
+        (function($) {
+            $(document).ready(function() {
+                $('.list-inline li > a').click(function() {
+                    var activeForm = $(this).attr('href') + ' > form';
+                    //console.log(activeForm);
+                    $(activeForm).addClass('animated fadeIn');
+                    //set timer to 1 seconds, after that, unload the animate animation
+                    setTimeout(function() {
+                        $(activeForm).removeClass('animated fadeIn');
+                    }, 1000);
+                });
+            });
+        })(jQuery);
+    </script>
+
+
+
+
+{% endblock %}

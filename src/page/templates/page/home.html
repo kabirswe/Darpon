@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load cropping %}
+{% load thumbnail %}
+{% load staticfiles %}
+{% block head_title %}{% trans 'Home' %} | {% endblock %}
+
+{% block head_css %}
+<link rel="stylesheet" href="{% static 'page/css/home.css' %}">
+{% endblock %}
+
+{% block head_js %}
+<script src="{% static 'page/js/home.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="home-page">
+	<h1 class="text-center">you are in home page</h1>
+</div>
+{% endblock content %}
