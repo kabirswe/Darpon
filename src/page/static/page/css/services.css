@@ -1,0 +1,21 @@
+.home-page {
+    margin-top: 120px;
+}
+.body-left-wrapper{
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+.body-right-wrapper{
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+.media {
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.media-body{
+  padding-left: 45px;
+}

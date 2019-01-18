@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load cropping %}
+{% load thumbnail %}
+{% load staticfiles %}
+{% block head_title %}{% trans 'Home' %} | {% endblock %}
+
+{% block head_css %}
+<link rel="stylesheet" href="{% static 'page/css/services.css' %}">
+{% endblock %}
+
+{% block head_js %}
+<script src="{% static 'page/js/services.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="home-page">
+	<h1 class="text-center">you are in services page</h1>
+	<div class="body-left-wrapper">
+		<div class="media">
+			<div>
+				<h4>side</h4>
+				<i class="fa fa facebook"></i>
+			</div>
+			<div class="media-body">
+				<h4>Design</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+			</div>
+     </div>
+
+		 <div class="media">
+	 		<div>
+	 			<h4>side</h4>
+	 			<i class="fa fa facebook"></i>
+	 		</div>
+	 		<div class="media-body">
+	 			<h4>Coding</h4>
+	 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	 		</div>
+		</div>
+
+		<div class="media">
+			<div>
+				<h4>side</h4>
+				<i class="fa fa facebook"></i>
+			</div>
+			<div class="media-body">
+				<h4>Analytic</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+
+		</div>
+
+</div>
+
+
+ <div class="body-right-wrapper">
+	 <div class="media">
+ 		<div>
+ 			<h4>side</h4>
+ 			<i class="fa fa facebook"></i>
+ 		</div>
+ 		<div class="media-body">
+ 			<h4>Concept</h4>
+ 			<p>This is first service</p>
+ 		</div>
+
+ 	</div>
+ </div>
+
+
+</div>
+{% endblock content %}
