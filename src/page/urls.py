@@ -14,4 +14,9 @@ urlpatterns = [
         views.project,
         name='project'
     ),
+    url(
+        r'^services/$',
+        views.services,
+        name='services'
+    ),
 ]

@@ -28,6 +28,13 @@ def home(request):
     return render(request, 'page/home.html', context)
 
 
+def services(request):
+    context = {
+        'nav': 'services',
+    }
+    return render(request, 'page/services.html', context)
+
+
 def project(request):
     context = {
         'nav': 'project',
