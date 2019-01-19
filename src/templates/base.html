@@ -42,19 +42,27 @@
 </head>
 
 <body>
-<!-- <div class="page-box">
-<div class="page-box-content"> -->
-<div class="main-body">
+    <div class="main-loader">
+        <div class="second-wrapper">
+            <div class="circle-loader">
+                <div class="circle circle_four"></div>
+                <div class="circle circle_three"></div>
+                <div class="circle circle_two"></div>
+                <div class="circle circle_one"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-body">
 
-  {% include 'includes/navbar.html' %}
+        {% include 'includes/navbar.html' %}
 
-  <div class="main-wrapper">
-      {% block content %}{% endblock %}
-  </div>
+        <div class="main-wrapper">
+            {% block content %}{% endblock %}
+        </div>
 
-  {% include 'includes/footer.html' %}
- 
-</div>
+        {% include 'includes/footer.html' %}
+
+    </div>
 
 
   <!-- </div>.page-box-content -->
@@ -64,5 +72,4 @@
 
   {% include 'includes/analytics.html' %}
 </body>
-
 </html>

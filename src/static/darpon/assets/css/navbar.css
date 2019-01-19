@@ -38,15 +38,20 @@
 	text-align: center;
 	padding-bottom: 20px;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
 }
 
-.left-wrapper .nav-main .nav-block li a {
+.left-wrapper .nav-main .nav-block li .nav-name {
 	text-decoration: none;
-	letter-spacing: 1px;
-	font-size: 14px;
+	    letter-spacing: 1px;
+	    font-size: 14px;
+	    width: 80px;
+	    text-align: right;
 }
 
-.left-wrapper .nav-main .nav-block li a span {
+.left-wrapper .nav-main .nav-block li .fa {
 	background: #7d7352;
 	height: 18px;
 	padding: 6px;
@@ -58,9 +63,12 @@
 	transition: ease-in .35s;
 }
 
-.left-wrapper .nav-main .nav-block li a:hover span {
+.left-wrapper .nav-main .nav-block li:hover .fa {
 	background: #fff;
 	color: #7d7352;
+}
+.left-wrapper .nav-main .nav-block li:hover .fa .nav-name {
+	color: #fff;
 }
 
 .left-wrapper .nav-bottom {
