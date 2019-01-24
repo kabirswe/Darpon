@@ -6,6 +6,8 @@
 {% block head_title %}{% trans 'project' %} | {% endblock %}
 
 {% block head_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'page/css/base.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'page/css/uncover.css' %}" />
 <link rel="stylesheet" href="{% static 'page/css/project.css' %}">
 {% endblock %}
 
@@ -15,6 +17,79 @@
 
 {% block content %}
 <div class="project-page">
-	<h1 class="text-center">you are in project page</h1>
+	<div class="demo-3 loading">
+		<main id="scrollHide">
+			<div class="content grid">
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url({% static 'page/img/19.jpg' %});"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title txt-effect">Noakhali Mail</h2>
+						<p class="grid__item-description">Read More ..</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url({% static 'page/img/12.jpg' %});"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title txt-effect">Noakhali Mail</h2>
+						<p class="grid__item-description">Read More ..</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url({% static 'page/img/13.jpg' %});"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title txt-effect">Noakhali Mail</h2>
+						<p class="grid__item-description">Read More ..</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url({% static 'page/img/14.jpg' %});"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title txt-effect">Noakhali Mail</h2>
+						<p class="grid__item-description">Read More ..</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url({% static 'page/img/15.jpg' %});"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title txt-effect">Noakhali Mail</h2>
+						<p class="grid__item-description">Read More ..</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url({% static 'page/img/16.jpg' %});"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title txt-effect">Noakhali Mail</h2>
+						<p class="grid__item-description">Read More ..</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url({% static 'page/img/17.jpg' %});"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title txt-effect">Noakhali Mail</h2>
+						<p class="grid__item-description">Read More ..</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url({% static 'page/img/18.jpg' %});"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title txt-effect">#need</h2>
+						<p class="grid__item-description">The new kid on the block</p>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="scroll-img" style="background-image: url({% static 'page/img/11.jpg' %});"></div>
+					<div class="grid__item-titlewrap">
+						<h2 class="grid__item-title txt-effect">#feed</h2>
+						<p class="grid__item-description">The new kid on the block</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="{% static 'page/js/imagesloaded.pkgd.min.js' %}"></script>
+		<script src="{% static 'page/js/anime.min.js' %}"></script>
+		<script src="{% static 'page/js/uncover.js' %}"></script>
+		<script src="{% static 'page/js/demo3.js' %}"></script>
+	</div>
 </div>
 {% endblock content %}

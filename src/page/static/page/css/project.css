@@ -1,3 +1,7 @@
 .project-page {
-    margin-top: 120px;
+    /* margin-top: 120px; */
+}
+
+.os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle {
+    background: transparent !important;
 }
