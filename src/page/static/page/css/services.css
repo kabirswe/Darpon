@@ -3,19 +3,23 @@
 }
 .body-left-wrapper{
 display: flex;
-flex-direction: column;
-width: 50%;
+width: 100%;
+flex-wrap: wrap;
 }
-.body-right-wrapper{
-display: flex;
-flex-direction: column;
-width: 50%;
+.media-icon{
+  font-size: 50px;
+color: #de440a;
+}
+.media-icon span:hover{
+color:#FDC432;
+transition: all ease-in .40s;
 }
 .media {
   display: flex;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  align-items: center;
+  width: 50%
 }
+
 .media-body{
   padding-left: 45px;
 }
