@@ -1,0 +1,47 @@
+.uncover {
+	overflow: hidden;
+	background-image: none !important;
+	position: relative;
+	box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+	margin-right: 20px;
+}
+
+.uncover__img {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.uncover__slices {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+}
+
+.uncover__slices--vertical {
+	flex-direction: row;
+}
+
+.uncover__slices--horizontal {
+	flex-direction: column;
+}
+
+.uncover__slices--horizontal-double {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.uncover__slices--vertical-double {
+	display: grid;
+	grid-template-rows: 50% 50%;
+}
+
+.uncover__slice {
+	color: #fff;
+	background-color: currentColor;
+	flex: 1;
+}
