@@ -1,45 +1,43 @@
-.home-page {
+.team-page {
     margin-top: 120px;
 }
 
-.main{
+.team-page .main{
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
 }
-.thumbnail{
+.team-page .thumbnail{
   display: flex;
   align-items: center;
   width: 30%;
 
 }
-.img{
+.team-page.img{
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  border: 2px solid;
+  border: 4px solid;
 }
-.img:hover{
+.team-page .img:hover{
   transition: all ease-in .40s;
-  border: 6px solid #ff8a00;
+  border: 4px solid #ff8a00;
 }
-.img-font h3{
+.team-page.img-font h3{
   text-align: center;
   font-family: sans-serif
-
-
 }
 
-.img-font p{
+.team-page .img-font p{
   text-align: center;
 
 }
-.icon{
+.team-page .icon{
   float: right;
   font-size: 30px;
 }
-.icon:hover{
+.team-page .icon:hover{
 color: #ff8a00;
 }

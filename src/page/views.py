@@ -49,8 +49,8 @@ def project(request):
     return render(request, 'page/project.html', context)
 
 
-def project(request):
+def team_detail(request):
     context = {
-        'nav': 'team-detail',
+        'nav': 'team_detail',
     }
-    return render(request, 'page/team-detail.html', context)    
+    return render(request, 'page/team_detail.html', context)

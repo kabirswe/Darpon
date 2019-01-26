@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load cropping %}
+{% load thumbnail %}
+{% load staticfiles %}
+{% block head_title %}{% trans 'Home' %} | {% endblock %}
+
+{% block head_css %}
+<link rel="stylesheet" href="{% static 'page/css/team_detail.css' %}">
+{% endblock %}
+
+{% block head_js %}
+<script src="{% static 'page/js/home.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="team_detail-page">
+<div class=" main-head">
+	<div>
+		<img class="img" src="/static/page/img/1.jpg" alt="">
+	</div>
+ <div class="team-text">
+	 <h3>Name</h3>
+ 	<p>Designtion</p>
+	<p>January 20, 2018</p>
+ </div>
+</div>
+<div class="wrapper">
+	<h1>Introduction to UI Design</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque.
+</p>
+
+</div>
+<div class="bottom-border">
+	<div class=" main-head">
+		<div>
+			<img class="img" src="/static/page/img/1.jpg" alt="">
+		</div>
+	 <div class="team-text">
+		 <h3>Name</h3>
+	 	<p>Designtion</p>
+		<p>January 20, 2018</p>
+	 </div>
+	</div>
+</div>
+
+
+
+</div>
+{% endblock content %}

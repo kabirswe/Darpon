@@ -25,8 +25,8 @@ urlpatterns = [
         name='team'
     ),
     url(
-        r'^team-detail/$',
-        views.team-detail,
-        name='team-detail'
+        r'^team_detail/$',
+        views.team_detail,
+        name='team_detail'
     ),
 ]
