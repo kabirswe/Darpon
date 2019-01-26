@@ -19,4 +19,14 @@ urlpatterns = [
         views.services,
         name='services'
     ),
+    url(
+        r'^team/$',
+        views.team,
+        name='team'
+    ),
+    url(
+        r'^team-detail/$',
+        views.team-detail,
+        name='team-detail'
+    ),
 ]

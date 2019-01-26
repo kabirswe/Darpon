@@ -35,8 +35,22 @@ def services(request):
     return render(request, 'page/services.html', context)
 
 
+def team(request):
+    context = {
+        'nav': 'team',
+    }
+    return render(request, 'page/team.html', context)
+
+
 def project(request):
     context = {
         'nav': 'project',
     }
     return render(request, 'page/project.html', context)
+
+
+def project(request):
+    context = {
+        'nav': 'team-detail',
+    }
+    return render(request, 'page/team-detail.html', context)    

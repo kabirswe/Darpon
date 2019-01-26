@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load cropping %}
+{% load thumbnail %}
+{% load staticfiles %}
+{% block head_title %}{% trans 'Home' %} | {% endblock %}
+
+{% block head_css %}
+<link rel="stylesheet" href="{% static 'page/css/team.css' %}">
+{% endblock %}
+
+{% block head_js %}
+<script src="{% static 'page/js/team.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="home-page">
+	<h1 class="text-center">you are in Team page</h1>
+
+<div class="main">
+<div class="thumbnail">
+	<div class="img-font">
+	<img class="img" src="/static/page/img/1.jpg" alt="">
+	<h3>Name</h3>
+	<p>Designation</p>
+
+	<div class="icon">
+		<span class="fa fa-twitter-square"></span>
+		<span class="fa fa-instagram"></span>
+	</div>
+	</div>
+</div>
+
+<div class="thumbnail">
+	<div class="img-font">
+	<img class="img" src="/static/page/img/1.jpg" alt="">
+	<h3>Name</h3>
+	<p>Designation</p>
+
+	<div class="icon">
+		<span class="fa fa-twitter-square"></span>
+		<span class="fa fa-instagram"></span>
+	</div>
+	</div>
+</div>
+
+
+<div class="thumbnail">
+	<div class="img-font">
+	<img class="img" src="/static/page/img/1.jpg" alt="">
+	<h3>Name</h3>
+	<p>Designation</p>
+
+	<div class="icon">
+		<span class="fa fa-twitter-square"></span>
+		<span class="fa fa-instagram"></span>
+	</div>
+	</div>
+</div>
+
+</div>
+</div>
+{% endblock content %}
