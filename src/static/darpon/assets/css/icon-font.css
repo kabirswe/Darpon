@@ -215,9 +215,9 @@
 .dt-home-house-streamline:before {
   content: "\22";
 }
-.dt-list-circle:before {
-  content: "\6a";
-}
 .dt-ios-information-outline:before {
   content: "\69";
+}
+.dt-list-thumbnails:before {
+  content: "\23";
 }

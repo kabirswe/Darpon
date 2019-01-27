@@ -52,7 +52,7 @@
 }
 
 .left-wrapper .nav-main .nav-block li .icon {
-	background: #7d7352;
+	background: #c28d42;
 	height: 18px;
 	padding: 6px;
 	border-radius: 50px;
@@ -62,14 +62,22 @@
 	line-height: 18px;
 	transition: ease-in .35s;
 	font-size: 16px;
+	color: #fff;
+}
+
+.left-wrapper .nav-main .nav-block li .nav-name {
+	color: #c28d42;
+	font-weight: 800;
+	transition: ease-in .35s;
 }
 
 .left-wrapper .nav-main .nav-block li:hover .icon {
-	background: #fff;
-	color: #7d7352;
+	background: #cd305f;
+    color: #fdcd43;
 }
-.left-wrapper .nav-main .nav-block li:hover .icon .nav-name {
-	color: #fff;
+
+.left-wrapper .nav-main .nav-block li:hover .nav-name {
+	color: #d3376b;
 }
 
 .left-wrapper .nav-bottom {
