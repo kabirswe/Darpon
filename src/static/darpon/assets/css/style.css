@@ -42,9 +42,18 @@ body {
     font-family: 'Roboto-Regular';
 }
 
-.txt-effect{
+.txt-effect {
     background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
     background: linear-gradient(to right,#ff8a00,#da1b60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.txt-effect2 {
+    background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#887e5c));
+    background: linear-gradient(to right,#ff8a00,#887e5c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
