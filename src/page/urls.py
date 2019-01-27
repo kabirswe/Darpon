@@ -29,4 +29,9 @@ urlpatterns = [
         views.team_detail,
         name='team_detail'
     ),
+    url(
+        r'^contact/$',
+        views.contact,
+        name='contact'
+    ),
 ]

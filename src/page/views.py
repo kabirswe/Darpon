@@ -54,3 +54,10 @@ def team_detail(request):
         'nav': 'team_detail',
     }
     return render(request, 'page/team_detail.html', context)
+
+
+def contact(request):
+    context = {
+        'nav': 'contact',
+    }
+    return render(request, 'page/contact.html', context)

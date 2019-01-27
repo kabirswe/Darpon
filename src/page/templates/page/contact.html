@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load cropping %}
+{% load thumbnail %}
+{% load staticfiles %}
+{% block head_title %}{% trans 'Home' %} | {% endblock %}
+
+{% block head_css %}
+<link rel="stylesheet" href="{% static 'page/css/contact.css' %}">
+{% endblock %}
+
+{% block head_js %}
+<script src="{% static 'page/js/contact.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="contact-page">
+<div class="contact-body">
+<h5>Customer Service</h5>
+<h2>CONTACT</h2>
+<p>For questions about our company and products found on our stores. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem.</p>
+</div>
+<div class="contact-info contact-body">
+	<div class="contact-info-1">
+		<h4>Contact</h4>
+		<p>Cell: 01717-------</p>
+		<p>Email:abc@gmail.com</p>
+	</div>
+	<div class="contact-info-1 contact-address">
+		<h4>Address</h4>
+		<p>Company address</p>
+		<p>12 Street Turning Place</p>
+		<p>South Est, Antartica</p>
+	</div>
+</div>
+<button type="button" class="main-button mr-50">Send Message</button>
+</div>
+{% endblock content %}
