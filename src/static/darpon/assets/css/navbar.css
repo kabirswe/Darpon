@@ -51,7 +51,7 @@
 	    text-align: center;
 }
 
-.left-wrapper .nav-main .nav-block li .fa {
+.left-wrapper .nav-main .nav-block li .icon {
 	background: #7d7352;
 	height: 18px;
 	padding: 6px;
@@ -61,13 +61,14 @@
 	margin-right: 10px;
 	line-height: 18px;
 	transition: ease-in .35s;
+	font-size: 16px;
 }
 
-.left-wrapper .nav-main .nav-block li:hover .fa {
+.left-wrapper .nav-main .nav-block li:hover .icon {
 	background: #fff;
 	color: #7d7352;
 }
-.left-wrapper .nav-main .nav-block li:hover .fa .nav-name {
+.left-wrapper .nav-main .nav-block li:hover .icon .nav-name {
 	color: #fff;
 }
 
