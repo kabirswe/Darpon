@@ -47,3 +47,8 @@ color: inherit;
 border-radius: 0;
 background: none;
 }
+.myForm-textarea{
+
+  border-radius: .25rem;
+  border: 2px solid #D1335B;
+}
