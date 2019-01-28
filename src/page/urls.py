@@ -34,4 +34,9 @@ urlpatterns = [
         views.contact,
         name='contact'
     ),
+    url(
+        r'^contact_detail/$',
+        views.contact_detail,
+        name='contact_detail'
+    ),
 ]

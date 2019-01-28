@@ -61,3 +61,10 @@ def contact(request):
         'nav': 'contact',
     }
     return render(request, 'page/contact.html', context)
+
+
+def contact_detail(request):
+    context = {
+        'nav': 'contact_detail',
+    }
+    return render(request, 'page/contact_detail.html', context)
