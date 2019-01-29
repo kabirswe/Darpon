@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load cropping %}
+{% load thumbnail %}
+{% load staticfiles %}
+{% block head_title %}{% trans 'Home' %} | {% endblock %}
+
+{% block head_css %}
+<link rel="stylesheet" href="{% static 'page/css/process.css' %}">
+{% endblock %}
+
+{% block head_js %}
+<script src="{% static 'page/js/process.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="home-page">
+	<h1 class="">Process</h1>
+
+<div class="process">
+	<div>
+		<span class="fa fa-eye"></span>
+		<h2>Idea</h2>
+		<hr>
+		<p>To analize the requirement through in depth research with the help of brilliant tools.</p>
+	</div>
+	<div>
+		<span class="fa fa-eye"></span>
+		<h2>sketch</h2>
+		<hr>
+		<p>To draft the design that is relatade to the research in order to check the feasibility.</p>
+	</div>
+	<div>
+		<span class="fa fa-eye"></span>
+		<h2>Design</h2>
+		<hr>
+		<p>After completing feasibility test a final design is prepared using smart tools.</p>
+	</div>
+	<div>
+		<span class="fa fa-eye"></span>
+		<h2>Develop</h2>
+		<hr>
+		<p>Now, our the development team starts developing the solution according to design.</p>
+	</div>
+	<div>
+		<span class="fa fa-eye"></span>
+		<h2>Test</h2>
+		<hr>
+		<p>In testing phase, we test every component to make sure that our solution firt the requirement.</p>
+	</div>
+	<div>
+		<span class="fa fa-eye"></span>
+		<h2>Celebrate</h2>
+		<hr>
+		<p>We makw dekivery for the solution and assist oure clients to control and administer solution.</p>
+	</div>
+
+</div>
+
+
+
+
+</div>
+{% endblock content %}

@@ -39,4 +39,9 @@ urlpatterns = [
         views.contact_detail,
         name='contact_detail'
     ),
+    url(
+        r'^process/$',
+        views.process,
+        name='process'
+    ),
 ]
