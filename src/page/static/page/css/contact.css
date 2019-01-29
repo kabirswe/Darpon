@@ -1,32 +1,116 @@
 .contact-page {
-    margin-top: 120px;
+    display: flex;
+    height: 100vh;
 }
-
-.contact-body{
-  width: 50%;
-  text-align:left !important;
-  font-family: sans-serif;
+.section-title {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .10;
+    z-index: 1;
 }
-.contact-body h5{
-  font-size: 1.50rem;
-  opacity: 0.75;
+.text-center {
+    text-align: center!important;
 }
-.contact-body h2{
-  letter-spacing: 0.1em;
-  font-size: 2.20rem;
-}
-.contact-body p{
-  font-size: 1.20rem;
-  opacity: 0.75;
+.section-title .title-bg {
+    letter-spacing: 0.0em;
+    padding-left: 0.0em;
+    font-size: 10rem;
 }
 .contact-info{
-  display: flex;
+    display: flex;
+    align-items: center;
+}
 
+.contact-info-block {
+    width: 50%;
 }
-.contact-address{
-padding-left: 30px;
+
+.contact-info-block h5{
+    font-size: 1.50rem;
+    opacity: 0.75;
 }
-.contact-info-1 h4{
-  padding-left: 30px;
-  font-size: 1.5rem;
+.contact-info-block h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+.contact-address {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.contact-address .contact-address-left {
+    width: 50%;
+}
+
+.contact-address .contact-address-right {
+    width: 50%;
+}
+
+.contact-info-map {
+    width: 50%;
+    height: 400px;
+}
+
+#map {
+    height: 100%;
+    box-shadow: 0px 14px 80px #191919;
+}
+
+.gm-svpc, .gmnoprint, .gm-style-cc, .gmnoprint, .gm-control-active {
+    display: none !important;
+}
+
+/* concat form block start */
+.contact-form-block {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form-left {
+    width: 50%;
+    height: 450px;
+}
+
+.contact-form-left h5 {
+    opacity: 0.75;
+}
+.contact-form-left h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+.contact-form-right {
+    display: flex;
+    width: 50%;
+    height: 450px;
+}
+
+.myForm {
+    font-size: 1.05em;
+    width: 20em;
+    z-index: 2;
+}
+
+.myForm-textbox{
+    display: block;
+    width: 100%;
+    font-size: 0.9em;
+    padding: 0.3em;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #D1335B;
+    color: inherit;
+    border-radius: 0;
+    background: none;
+}
+
+.myForm-textbox:focus, .myForm-textarea:focus {
+    outline: 0 !important;
+}
+.myForm-textarea{
+    border: 2px solid #D1335B;
+    height: 200px;
+    margin-bottom: 30px;
 }

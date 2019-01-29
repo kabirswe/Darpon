@@ -25,7 +25,7 @@ urlpatterns = [
         name='team'
     ),
     url(
-        r'^team_detail/$',
+        r'^team/detail/$',
         views.team_detail,
         name='team_detail'
     ),
@@ -35,7 +35,7 @@ urlpatterns = [
         name='contact'
     ),
     url(
-        r'^contact_detail/$',
+        r'^contact/detail/$',
         views.contact_detail,
         name='contact_detail'
     ),

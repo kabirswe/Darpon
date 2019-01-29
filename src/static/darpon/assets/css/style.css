@@ -86,6 +86,7 @@ body {
     text-transform: uppercase;
     transition: all ease-in .40s;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .main-button:hover {
