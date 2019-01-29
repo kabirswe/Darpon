@@ -16,4 +16,10 @@ $(document).ready(function(){
             clickable: true,
         }
     });
+
+    $("#scrollHide").overlayScrollbars({
+        className       : "os-theme-dark",
+        resize          : "both",
+        sizeAutoCapable : true,
+    });
 });
