@@ -15,24 +15,167 @@
 
 {% block content %}
 <div class="contact-page">
-<div class="contact-body">
-<h5>Customer Service</h5>
-<h2>CONTACT</h2>
-<p>For questions about our company and products found on our stores. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem.</p>
-</div>
-<div class="contact-info contact-body">
-	<div class="contact-info-1">
-		<h4>Contact</h4>
-		<p>Cell: 01717-------</p>
-		<p>Email:abc@gmail.com</p>
+	<div class="section-title text-center">
+		<h5 class="title-bg">Contact</h5>
 	</div>
-	<div class="contact-info-1 contact-address">
-		<h4>Address</h4>
-		<p>Company address</p>
-		<p>12 Street Turning Place</p>
-		<p>South Est, Antartica</p>
+	<div class="contact-info">
+		<div class="contact-info-block">
+			<h2>CONTACT</h2>
+			<p>For questions about our company and products found on our stores. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem.</p>
+			<div class="contact-address">
+				<div class="contact-address-left">
+					<h4>Contact</h4>
+					<p>Cell: +88 01722 759646</p>
+					<p>Email:info@darpontech.com</p>
+				</div>
+				<div class="contact-address-right">
+					<h4>Address</h4>
+					<p>Company address</p>
+					<p>12 Street Turning Place</p>
+					<p>South Est, Antartica</p>
+				</div>
+			</div>
+			<button onclick="showinfo(true)" type="button" class="main-button mr-50">Send Message</button>
+		</div>
+		<div class="contact-info-map">
+			<div id="map"></div>
+		</div>
+	</div>
+	<div class="contact-form-block" style="display: none;">
+		<div class="contact-form-left">
+			<h5>Send Message</h5>
+	        <h2>EMAIL US</h2>
+	        <p>For questions about our company and products found on our stores. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem.</p>
+			<div class="contact-address">
+				<div class="contact-address-left">
+					<h4>Contact</h4>
+					<p>Cell: +88 01722 759646</p>
+					<p>Email:info@darpontech.com</p>
+				</div>
+				<div class="contact-address-right">
+					<h4>Address</h4>
+					<p>Company address</p>
+					<p>12 Street Turning Place</p>
+					<p>South Est, Antartica</p>
+				</div>
+			</div>
+			<button onclick="showinfo(false)" type="button" class="main-button mr-50">Information</button>
+		</div>
+		<div class="contact-form-right">
+			<form class="myForm">
+
+	            <p>
+	                <label>Name
+	                    <input type="text" class="myForm-textbox" name="customer_name" required>
+	                </label>
+	            </p>
+	            <p>
+	                <label>Email
+	                </label>
+	                    <input type="email" class="myForm-textbox" name="email_address">
+	            </p>
+
+	            <p>
+
+	                <label>Address
+	                    <textarea name="comments" class="myForm-textbox myForm-textarea" maxlength="800"></textarea>
+	                </label>
+	            </p>
+
+	            <button type="button" class="main-button" style="width: 100%;">Send</button>
+	        </form>
+		</div>
 	</div>
 </div>
-<button type="button" class="main-button mr-50">Send Message</button>
-</div>
+<script>
+      function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.674, lng: -73.945},
+          zoom: 12,
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmI-dUfwiDBQrhpEO2fUkd2xzmyJchsGA&callback=initMap"
+    async defer></script>
 {% endblock content %}
