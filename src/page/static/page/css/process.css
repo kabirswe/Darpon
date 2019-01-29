@@ -1,11 +1,19 @@
 .process-page {
     margin-top: 120px;
 }
-.process{
+.process-pro{
   display: flex;
 }
-.process hr{
-  width: 70%;
+.icon-body{
+  padding-top: 25px;
+}
+.process-icn{
+height: 80px;
+width: 80px;
+border: 2px solid #BF2268;
+border-radius: 50%;
+background-color: #F8724B;
+text-align: center;
 }
 .process h2{
   font-size: 1.5rem;
@@ -13,8 +21,21 @@
   text-align: center;
 
 }
-.process p{
+.process hr{
+  widows: 30%;
+}
+
+.process{
   text-align: left;
+  padding-left: 50px;
+  width: 50%;
 
+}
 
+.process-text{
+  width: 50%;
+
+}
+.maintext{
+  width:100px;
 }
