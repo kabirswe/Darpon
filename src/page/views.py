@@ -68,3 +68,10 @@ def contact_detail(request):
         'nav': 'contact_detail',
     }
     return render(request, 'page/contact_detail.html', context)
+
+
+def process(request):
+    context = {
+        'nav': 'process',
+    }
+    return render(request, 'page/process.html', context)
