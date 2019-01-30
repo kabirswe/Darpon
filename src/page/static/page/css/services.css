@@ -1,27 +1,33 @@
-.home-page {
+.services-page {
     margin-top: 120px;
 }
+.services-page h1 {
+    font-size: 20px;
+    padding: 0 40px;
+    text-align: center;
+    text-transform: none;
+}
 .body-left-wrapper{
-display: flex;
-width: 100%;
-flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .media-icon{
-  font-size: 50px;
-color: #de440a;
+    font-size: 50px;
+    color: #de440a;
 }
 .media-icon span:hover{
-color:#FDC432;
-transition: all ease-in .40s;
+    color:#FDC432;
+    transition: all ease-in .40s;
 }
 .media {
-  display: flex;
-  align-items: center;
-  width: 50%
+    display: flex;
+    align-items: center;
+    width: 50%
 }
 
 .media-body{
-  padding-left: 45px;
+    padding-left: 45px;
 }
 .design-icon{
     height: 40px;

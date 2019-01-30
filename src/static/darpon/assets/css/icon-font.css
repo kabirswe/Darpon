@@ -221,3 +221,75 @@
 .dt-list-thumbnails:before {
   content: "\23";
 }
+.dt-users:before {
+  content: "\6a";
+}
+.dt-social-html5:before {
+  content: "\26";
+}
+.dt-social-javascript:before {
+  content: "\27";
+}
+.dt-social-wordpress:before {
+  content: "\28";
+}
+.dt-flame:before {
+  content: "\29";
+}
+.dt-magic-wand:before {
+  content: "\2a";
+}
+.dt-3-css:before {
+  content: "\2b";
+}
+.dt-arrow-down:before {
+  content: "\2c";
+}
+.dt-arrow-left:before {
+  content: "\2d";
+}
+.dt-arrow-right:before {
+  content: "\2e";
+}
+.dt-arrow-up:before {
+  content: "\2f";
+}
+.dt-database-5:before {
+  content: "\3a";
+}
+.dt-page-export-pdf:before {
+  content: "\3b";
+}
+.dt-social-adobe:before {
+  content: "\3c";
+}
+.dt-magic-wand-1:before {
+  content: "\3d";
+}
+.dt-mobile:before {
+  content: "\3e";
+}
+.dt-monitor:before {
+  content: "\3f";
+}
+.dt-light-down:before {
+  content: "\40";
+}
+.dt-upload-cloud:before {
+  content: "\5b";
+}
+.dt-tripit:before {
+  content: "\5d";
+}
+.dt-ipad:before {
+  content: "\24";
+}
+.dt-leaf-1:before {
+  content: "\6b";
+}
+.dt-graduation-cap:before {
+  content: "\25";
+}
+.dt-check-clipboard-1:before {
+  content: "\5e";
+}

@@ -77,7 +77,7 @@ def process(request):
     return render(request, 'page/process.html', context)
 
 
-def specializ(request):
+def specialization(request):
     context = {
         'nav': 'specializ',
     }

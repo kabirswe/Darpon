@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 {% load i18n %}
-{% load cropping %}
-{% load thumbnail %}
 {% load staticfiles %}
 {% block head_title %}{% trans 'Home' %} | {% endblock %}
 
@@ -21,55 +19,48 @@
 			<h2 class="txt-effect2">Domain + Hosting + Maintenensce</h2>
 			<h3 class="txt-effect2">(with full dynamic controll)</h3>
 		</div>
-		<!-- <h1 class="txt-effect2 text-center">We offer a range of web development services to our valued clients Darpon
-			Technology is committed to providing state - of - the - art web development
-			services to our clients worldwide. Backed by a team of highly skilled and
-			experienced developers, we are able to extend such services using the
-			most cutting edge technologies. We follow a structured process of
-			development and offer timely project delivery.</h1> -->
 		<div class="slider-box">
 			<div class="blog-slider">
 				<div class="blog-slider__wrp swiper-wrapper">
 					<div class="blog-slider__item swiper-slide">
 						<div class="blog-slider__img">
-
-							<img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg" alt="">
+							<img src="{% static 'page/img/ox.png' %}" alt="">
 						</div>
 						<div class="blog-slider__content">
-							<div class="blog-slider__title">Lorem Ipsum Dolor</div>
-							<div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+							<div class="blog-slider__title">Oxford Ideal School</div>
+							<div class="blog-slider__text">A full featcherd school management software. Most popular and secure, developded by python...</div>
 							<a href="#" class="blog-slider__button">READ MORE</a>
 						</div>
 					</div>
 					<div class="blog-slider__item swiper-slide">
 						<div class="blog-slider__img">
-							<img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg" alt="">
+							<img src="{% static 'page/img/nm.png' %}" alt="">
 						</div>
 						<div class="blog-slider__content">
-							<div class="blog-slider__title">Lorem Ipsum Dolor2</div>
-							<div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-							<a href="#" class="blog-slider__button">READ MORE</a>
-						</div>
-					</div>
-
-					<div class="blog-slider__item swiper-slide">
-						<div class="blog-slider__img">
-							<img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
-						</div>
-						<div class="blog-slider__content">
-							<div class="blog-slider__title">Lorem Ipsum Dolor</div>
-							<div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+							<div class="blog-slider__title">Noakhali Mail BD</div>
+							<div class="blog-slider__text">Dynamic NewsPaper System. Multi repoter news submition with advertisement control and multi user support...</div>
 							<a href="#" class="blog-slider__button">READ MORE</a>
 						</div>
 					</div>
 
 					<div class="blog-slider__item swiper-slide">
 						<div class="blog-slider__img">
-							<img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
+							<img src="{% static 'page/img/px.png' %}" alt="">
 						</div>
 						<div class="blog-slider__content">
-							<div class="blog-slider__title">Lorem Ipsum Dolor</div>
-							<div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+							<div class="blog-slider__title">Personal Expenses Manager</div>
+							<div class="blog-slider__text">Save your Expenses daily and monitor you earning and expenses by year, month & daily...</div>
+							<a href="#" class="blog-slider__button">READ MORE</a>
+						</div>
+					</div>
+
+					<div class="blog-slider__item swiper-slide">
+						<div class="blog-slider__img">
+							<img src="{% static 'page/img/total.png' %}" alt="">
+						</div>
+						<div class="blog-slider__content">
+							<div class="blog-slider__title">Total Service BD</div>
+							<div class="blog-slider__text">React Js base Ecommerce Solution. Managing customers order with internal inventory...</div>
 							<a href="#" class="blog-slider__button">READ MORE</a>
 						</div>
 					</div>
@@ -86,19 +77,19 @@
 			</div>
 			<div class="service-body">
 				<div class="service-box">
-					<span class="icon dt-android"></span>
+					<span class="icon dt-upload-cloud"></span>
 					<p>Web Hosting</p>
 				</div>
 				<div class="service-box">
-					<span class="icon dt-android"></span>
+					<span class="icon dt-magic-wand-1"></span>
 					<p>Design / Markup</p>
 				</div>
 				<div class="service-box">
-					<span class="icon dt-android"></span>
+					<span class="icon dt-code"></span>
 					<p>Web Development</p>
 				</div>
 				<div class="service-box">
-					<span class="icon dt-android"></span>
+					<span class="icon dt-mobile"></span>
 					<p>Mobile App Development</p>
 				</div>
 			</div>
@@ -113,23 +104,37 @@
 			</div>
 			<div class="choose-body">
 				<div class="choose-box-1">
-					<span class="icon dt-android"></span>
-					<p>Web Hosting</p>
+					<div class="choose-box">
+						<span class="icon dt-graduation-cap"></span>
+						<h2>expertise</h2>
+						<p>We have the right people and expertise to meet your expectation.</p>
+					</div>
 				</div>
 				<div class="choose-box-2">
-					<span class="icon dt-android"></span>
-					<p>Design / Markup</p>
+					<div class="choose-box">
+						<span class="icon dt-leaf-1"></span>
+						<h2>trust</h2>
+						<p>We have served local and international clients and gain trust by meeting their expectation.</p>
+					</div>
 				</div>
 				<div class="choose-box-3">
-					<p class="choose-show-content"></p>
+					<div class="choose-show-box">
+						<p class="txt-effect choose-show-content">We have the right people and expertise to meet your expectation.</p>
+					</div>
 				</div>
 				<div class="choose-box-4">
-					<span class="icon dt-android"></span>
-					<p>Mobile App Development</p>
+					<div class="choose-box">
+						<span class="icon dt-users"></span>
+						<h2>work force</h2>
+						<p>We recruits some of the best designers and developers to ensure top level output for our clients.</p>
+					</div>
 				</div>
 				<div class="choose-box-5">
-					<span class="icon dt-android"></span>
-					<p>Mobile App Development</p>
+					<div class="choose-box">
+						<span class="icon dt-folder-check"></span>
+						<h2>expertise</h2>
+						<p>We have the right people and expertise to meet your expectation.</p>
+					</div>
 				</div>
 			</div>
 
