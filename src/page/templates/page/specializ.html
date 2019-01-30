@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load cropping %}
+{% load thumbnail %}
+{% load staticfiles %}
+{% block head_title %}{% trans 'Home' %} | {% endblock %}
+
+{% block head_css %}
+<link rel="stylesheet" href="{% static 'page/css/specializ.css' %}">
+{% endblock %}
+
+{% block head_js %}
+<script src="{% static 'page/js/specializ.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="specializ-page">
+
+<div class="btn-group">
+<div>
+	<ul class="main-ul">
+ <li><button class="main-btn" type="button" name="button"> Design & Markup</button></li>
+	<li><button class="sub-btn" type="button" name="button">Graphics Design</button></li>
+	<li><button class="sub-btn" type="button" name="button">Logo Design</button></li>
+	<li><button class="sub-btn" type="button" name="button">Web Design</button></li>
+	<li><button class="sub-btn" type="button" name="button">Font End</button></li>
+	</ul>
+</div>
+<div>
+	<ul class="main-ul">
+ <li><button class="main-btn" type="button" name="button">Web Development</button></li>
+	<li><button class="sub-btn" type="button" name="button">Open Source</button></li>
+	<li><button class="sub-btn" type="button" name="button">eCommerce</button></li>
+	<li><button class="sub-btn" type="button" name="button">Custom Development</button></li>
+	<li><button class="sub-btn" type="button" name="button">Frame Work</button></li>
+	</ul>
+</div>
+<div>
+	<ul class="main-ul">
+ <li><button class="main-btn" type="button" name="button">Apps& Game Development</button></li>
+	<li><button class="sub-btn" type="button" name="button">Android Apps</button></li>
+	<li><button class="sub-btn" type="button" name="button">iOS apps</button></li>
+	<li><button class="sub-btn" type="button" name="button">Facbook Apps</button></li>
+	<li><button class="sub-btn" type="button" name="button">Game Development</button></li>
+	</ul>
+</div>
+<div>
+	<ul class="main-ul">
+ <li><button class="main-btn" type="button" name="button">Big Data</button></li>
+	<li><button class="sub-btn" type="button" name="button">Business Analytic</button></li>
+	<li><button class="sub-btn" type="button" name="button">Business Intelligence</button></li>
+	</ul>
+</div>
+<div>
+	<ul class="main-ul">
+ <li><button class="main-btn" type="button" name="button">Digital Marketing</button></li>
+	<li><button class="sub-btn" type="button" name="button">SEO</button></li>
+	<li><button class="sub-btn" type="button" name="button">Social Media</button></li>
+	<li><button class="sub-btn" type="button" name="button">PPC</button></li>
+	<li><button class="sub-btn" type="button" name="button">Display Ads</button></li>
+	</ul>
+</div>
+
+
+</div>
+
+</div>
+{% endblock content %}

@@ -44,4 +44,9 @@ urlpatterns = [
         views.process,
         name='process'
     ),
+    url(
+        r'^specializ/$',
+        views.specializ,
+        name='specializ'
+    ),
 ]

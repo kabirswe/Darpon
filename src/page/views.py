@@ -75,3 +75,10 @@ def process(request):
         'nav': 'process',
     }
     return render(request, 'page/process.html', context)
+
+
+def specializ(request):
+    context = {
+        'nav': 'specializ',
+    }
+    return render(request, 'page/specializ.html', context)
