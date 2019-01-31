@@ -21,16 +21,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px solid #fb9400;
+    border: 2px solid #fb9400;
     /* width: 100%; */
     padding: 10px;
 }
 .home-page .offer-banner h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
 }
 .home-page .offer-banner h2 {
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
 }
 .home-page .offer-banner h3 {
@@ -50,7 +50,7 @@
     box-shadow: 0px 14px 80px #191919;
     padding: 25px;
     border-radius: 25px;
-    height: 330px;
+    height: 220px;
     transition: all 0.3s;
 }
 @media screen and (max-width: 992px) {
@@ -328,7 +328,7 @@
     flex-direction: column;
 }
 .home-page .service-body .service-box .icon {
-    font-size: 80px;
+    font-size: 30px;
     color: #fd4040;
 }
 .home-page .service-body .service-box p {
