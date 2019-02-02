@@ -115,6 +115,14 @@
 .global-menu__item.is-opened:nth-of-type(4) {
 	transition-delay: 0.7s;
 }
+
+.global-menu__item:nth-of-type(5) {
+	transition-delay: 0.25s;
+}
+
+.global-menu__item.is-opened:nth-of-type(5) {
+	transition-delay: 0.6s;
+}
 /* demo 3 */
 .global-menu__item--demo.is-opened {
 	transition-duration: 0.3s;
